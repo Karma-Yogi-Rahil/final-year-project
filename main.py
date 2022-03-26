@@ -2,11 +2,13 @@ import streamlit as st
 from PIL import Image
 import imagecaption
 import currencycalculator
+import clothdetection
 
 
 PAGES = {
     "Image Cation": imagecaption,
-    "CURRENCY ": currencycalculator
+    "CURRENCY ": currencycalculator,
+    "cloth detection": clothdetection
 }
 st.sidebar.title('Navigation')
 selection = st.sidebar.radio("Go to", list(PAGES.keys()))
