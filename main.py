@@ -8,7 +8,7 @@ import clothdetection
 PAGES = {
     "Image Cation": imagecaption,
     "CURRENCY ": currencycalculator,
-    "cloth detection": clothdetection
+    "cloth detection": clothdetection,
 }
 st.sidebar.title('Navigation')
 selection = st.sidebar.radio("Go to", list(PAGES.keys()))
